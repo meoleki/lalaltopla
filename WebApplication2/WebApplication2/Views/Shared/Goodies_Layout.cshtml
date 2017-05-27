@@ -1,0 +1,22 @@
+﻿    @{
+        Layout = "~/Views/Shared/_Layout.cshtml";
+        ViewBag.Title = "Домашняя страница";
+    }
+    <h2>@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <div style="overflow: hidden;">
+        <div style="width: 500%;">
+            <div class="navbar-inverse" style="float: left; width: 300px; height: 400px;">
+                <h3>Каталог</h3>
+                <p><a class="btn btn-default" style="width:200px" href="">  Мобильные телефоны </a></p>
+                <p><a class="btn btn-default" style="width:200px" href=""> Ноутбуки </a></p>
+                <p><a class="btn btn-default" style="width:200px" href="">  Наушники </a></p>
+                <p><a class="btn btn-default" style="width:200px" href="">  Камеры </a></p>
+                
+            </div>
+            <div style="float: left; width: 48%; height: 100%;">
+                @RenderBody()
+            </div>
+        </div>
+    </div>

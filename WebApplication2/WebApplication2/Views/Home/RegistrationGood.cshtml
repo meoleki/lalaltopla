@@ -1,0 +1,11 @@
+﻿@model WebApplication1.Controllers.HomeController
+
+@{
+    ViewBag.Title = "Регистрация успешна";
+}
+
+<h2>Поздравляем</h2>
+
+Регистрация пользователя <strong>@ViewBag.Login</strong> успешно завершена.
+<br/><br />
+@Html.ActionLink("Домашняя страница", "Index", "Home")

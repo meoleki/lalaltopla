@@ -1,0 +1,42 @@
+﻿@model WebApplication2.Models.LogInViewModel
+@{
+    ViewBag.Title = "Вход";
+}
+
+<h2>Вход</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="form-inline">
+        <hr />
+        <div>
+            Логин:   
+            <input id="Login" name="Login" type="text" /><br />
+            @Html.ValidationMessageFor(user => user.Login)<br />
+        </div>
+        @*<input id="Login" name="Login" type="text" /><br />*@
+        @*Html.TextBoxFor(user => user.Login)<br />*@
+        <div>
+            Пароль:
+           <input id="Password" name="Password" type="text" /><br />
+            @Html.ValidationMessageFor(user => user.Password)<br />
+        </div>
+            <div class="controls">
+                <label class="checkbox">
+                    <input type="checkbox"> Запомнить меня
+                </label>
+            </div>
+        <br />
+
+
+            <div>
+                <div>
+                    <input class="btn btn-default" type="submit" value="Войти" />
+                </div>
+            </div>
+            <br />
+
+            @Html.ActionLink("Домашняя страница", "Index", "Home")
+    </div>
+}
+
