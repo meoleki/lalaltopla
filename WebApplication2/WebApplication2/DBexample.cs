@@ -20,6 +20,14 @@ namespace WebApplication2
             Kira.age = 1998;
             Users.Add(Kira);
 
+            User asd;
+            asd= new User();
+            asd= "Asd";
+            asd= "asdasd";
+            sd= "asdasd";
+            Kira.age = 1998;
+            Users.Add(Kira);
+
             User Vlad;
             Vlad = new User();
             Vlad.name = "Vladislav";
